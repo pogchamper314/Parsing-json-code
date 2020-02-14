@@ -1,9 +1,13 @@
 <?php
+$fopen=file("Log.txt");
+$ip="7";
+$speed="10";
+echo $fopen[$ip];
+echo $fopen[$speed];
 
-$string = file_get_contents("json1.json");
-$json_a = json_decode($string, true);
-
-/*echo $json_a['type']['status'];*/
-echo "speed = ".$json_a["Json2"]['speed']."\n";
-echo "ip = ".$json_a["Json2"]['ip'];
+$fd=fopen("newLog.txt", 'w');
+fwrite($fd, $fopen[$ip]);
+fwrite($fd, $fopen[$speed]);
+fclose($fd);
 ?>
+

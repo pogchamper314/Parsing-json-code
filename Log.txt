@@ -1,0 +1,28 @@
+Array
+
+(
+    [0] => Array
+        (
+            [duplex] => full
+            [gateway] => 192.168.0.1
+            [ip] => 192.168.0.105
+            [name] => eth0
+            [netmask] => 255.255.255.0
+            [speed] => 100
+            [stat] => Array
+                (
+                    [received_bytes] => 468834
+                    [received_discard_packets] => 0
+                    [received_error_packets] => 0
+                    [received_multicast_packets] => 8
+                    [received_total_packets] => 633
+                    [sent_bytes] => 83403
+                    [sent_error_packets] => 0
+                    [sent_total_packets] => 780
+                )
+
+            [timestamp] => 1580976863
+            [type] => network
+        )
+
+)
