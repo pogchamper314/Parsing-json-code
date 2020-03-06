@@ -27,9 +27,4 @@ mysqli_close($link);
 
 
 
-/*$fd=fopen("newLog.txt", 'w');
-fwrite($fd, $fopen[$ip]);
-fwrite($fd, $fopen[$speed]);
-fclose($fd);
- */
 ?>
