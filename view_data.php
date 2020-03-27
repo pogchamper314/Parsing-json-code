@@ -3,19 +3,18 @@ require('config.php');
 
 $table = "arguments";
  
-/* Создаем соединение */
+
 $link = mysqli_connect($host, $user, $password, $db_name);
 if(!$link){
     die('Db connection Error!');
 }
  
  
-/* Составляем запрос для извлечения данных из полей "name", "email", "theme",
-"message", "data" таблицы "test_table" */
+
 $query = "SELECT id, ip, speed, data FROM $table";
  
 echo ("$query"); 
-/* Выводим данные из таблицы */
+
 echo ("
 <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
 <html>
@@ -51,13 +50,12 @@ td { padding: 3px; text-align: center; vertical-align: middle; }
  </tr>
 ");
  
-/* Цикл вывода данных из базы конкретных полей */
 
- 
-/* Закрываем соединение */
+
+
 mysqli_close($link);
  
-/* Выводим ссылку возврата */
+
 echo ("<div style=\"text-align: center; margin-top: 10px;\"><a href=\"index.html\">Вернуться назад</a></div>");
  
 ?>
