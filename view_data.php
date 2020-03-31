@@ -21,7 +21,7 @@ echo ("
  
 <head>
  
-    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1251\" />
+    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=uft-8\" />
  
     <title>Вывод данных из MySQL</title>
  
